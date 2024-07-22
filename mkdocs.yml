@@ -1,11 +1,41 @@
 site_name: sasha-ken
-<<<<<<< HEAD
 theme:
   name: material
+  language: ja
   feature:
     - navigation.tabs
     - navigation.top
     - navigation.indexes
-=======
-theme: readthedocs
->>>>>>> refs/remotes/origin/main
+    - search.suggest
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.code.select
+plugins:
+  search:
+    lang: 'ja'
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/Sasha_Quinnk
+      name: Sasha_Quinnk
+    - icon: fontawesome/brands/github
+      link: https://github.com/quinn-sasha
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sasha-quinn-9551542b1/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
