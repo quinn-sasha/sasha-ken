@@ -1,1 +1,7 @@
 site_name: sasha-ken
+theme:
+  name: material
+  feature:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
