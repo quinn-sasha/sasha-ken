@@ -22,14 +22,14 @@ Cには入力・出力の定義がない。
 
 全ての変数を宣言して使う。変数の性質を告げるためである。
 (datea types)
-| primary  | derived |
-|--|--|
-| int    | function  |
-| float  | array     |
-| char   | pointer   |
-| short  | reference |
-| long	 |
-| double |
+| primary   | derived   |
+| :-------- | :-------- |
+| int       | function  |
+| float     | array     |
+| char      | pointer   |
+| short     | reference |
+| long	    |		    |
+| double    |           |
 
 
 ファイルの種類に関係なくデータを扱うために、連続した文字列データとして扱う。それをtext streamと呼ぶ。行単位で構成されており、各行の最後には改行文字がくる。一文字づつ読み込む。
