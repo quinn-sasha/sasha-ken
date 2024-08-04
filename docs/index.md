@@ -12,9 +12,9 @@
 コンピュータサイエンスの基本。
 参考にしたカリキュラムは以下の3つです。
 
- - https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#interview-prep-books
- - https://roadmap.sh/get-started
- - https://github.com/ralphplumley/TeachYourselfCS-JP/blob/main/%E6%97%A5%E6%9C%AC%E8%AA%9E.md
+ - (https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#interview-prep-books)
+ - (https://roadmap.sh/get-started)
+ - (https://github.com/ralphplumley/TeachYourselfCS-JP/blob/main/%E6%97%A5%E6%9C%AC%E8%AA%9E.md)
 
 ## 短期の目標
 オープンソースプロジェクトを1つ選びソースコードを読めるようになる。そして貢献する。
