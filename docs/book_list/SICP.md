@@ -7,7 +7,7 @@
  - So be versatile to any programming language
 
 By 9/1
-
+僕の問題への答えは[こちら]()を参照
 
 # 1.1 Elements of programming language
 
@@ -167,9 +167,86 @@ linear iterative process
 |--|--|
 | nが1増えるにつれて記録しなければならない情報量が1増える。図にしてみると右に出張った2次関数みたいになる。 | nが1増えるにつれてループ中の処理が1つ増える。しかしnの大きさに関係なく、必要とする変数は一定。 |
 
+**recursive 'process' ≠ recursive 'procedure'**
+| process | procedure |
+|--|--|
+| not about syntax. how the process evolves | syntactically the procedure call itself   |
+
 >iterative processは3つの要素で構成されている。
 >固定ルール、固定された数の変数、ループ終了条件。
 
+### Tree Recursion
+
+Think about fibonacci numbers like
+0, 1, 2, 3, 5, 8, 13, ...
+$n = (n-2)(n-1)$
+$$
+\begin{aligned}
+&F_0 = 0, \\
+&F_1 = 1, \\
+&F_n = F_{n-1} + F_{n-2} \quad \text{for } n > 1.
+\end{aligned}
+$$
+
+To express this, most easiest way is to use tree recursion.
+```scheme
+(define (fib n)
+  (fib-iter 1 0 n))
+
+(define (fib-iter a b count)
+  (if (= count 0)
+      b
+      (fib-iter (+ a b) a (- count 1))))
+```
+- 性質
+	- 木のように下に向かって枝分かれしていく構造
+	- 各節の数（計算量）は入力に対して指数的に増える
+	- 深さ（メモリ消費）は入力に対して線形に増加する
+
+linear iterative processを使うと以下のようになる。
+```scheme
+(define (fib n)
+  (fib-iter 1 0 n))
+
+(define (fib-iter a b count)
+  (if (= count 0)
+      b
+      (fib-iter 
+            (+ a b) 
+            a 
+```
+必要な変数は3つのみ。また計算量は入力nに対して線形的に増えるだけ。
+
+### 両替問題
+任意の金額を与えられた種類のコインを使って両替する方法の数を計算せよ。
+
+(コインの種類は、50セント, 25セント, 10セント, 5 セント, 1セントとする。 )
+
+方針；再帰的なプロセスを使う
+
+ベースケース（最終地点）
+ - 硬貨の種類 = 0なら、0通り（両替できない）
+ - 金額 < 0なら、0通り
+ - 金額 = 0なら、1通り（何も使わない）
+最終的にはベースケースまで問題を分割していくことを目指す。
+
+分割していく方法：
+n種類の硬貨、分割する金額をaとする。
+コインの種類を小さいものから順番に並べておく。
+全ての両替法の数は以下の二つに分割される。
+ 1. 最初の種類のコインを使わない世界線
+	 - 金額aを(n - 1)種類のコインで両替する方法の数
+ 2. 最初のコインを最低でも1枚以上使う世界線
+	 - 金額(a -d)をn種類のコインを使って両替する方法の数(dはコインの額面金額)
+
+1と2をベースケースに到達するまで適用し続けるプロセスは、tree recursionになっている。2で(a - d)となる理由は、最初の種類のコインを最低でも1枚使うことが決まっているからである。
+
+
+# わからなかった問題
+
+ - [ ] 金額に対して両替の場合の数を計算する再帰プロセスを、より効率的なアルゴリズムで書く。おそらく反復プロセスではない。
+
+ 金額に対して両替の場合の数を計算する再帰プロセスを、より効率的なアルゴリズムで書く。おそらく反復プロセスではない。
 
 
 ## バグの見つけ方
