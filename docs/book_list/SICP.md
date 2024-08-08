@@ -7,7 +7,6 @@
  - So be versatile to any programming language
 
 By 9/1
-僕の問題への答えは[こちら]()を参照
 
 # 1.1 Elements of programming language
 
@@ -41,6 +40,7 @@ How interpreter evaluates combination?
 
 次に各数値などのprimitive expressionを評価する。
 実はoperatorも変数の特殊系みたいなものだと言える。
+
 ### Variable
 Variable is one of abstraction ways.
 It enables us to write more complex programs.
@@ -62,6 +62,37 @@ environment-- determines -->meaning-of-symbol
 ```scheme
 (define (<name> <parameter>) (<body>))
 ```
+procedure（関数）も特殊な変数のようなものらしい。
+```python
+max(1.2, 4)
+# 4
+
+f = max
+f(1.2, 4)
+# 4
+#maxは一連の最大値を求める手続きを表す変数だった
+```
+
+### pure function vs non-pure function
+
+ - pure function:
+	 - 入力を受け取り値を返す以上のことはしない。
+```mermaid
+flowchart LR
+-2 --> id1[[abs]] --> 2
+```
+ - non-pure function:
+	 - 値を返す以外に、コンピュータもしくはインタープレターに対して副効果
+
+例えばprintは返す値が引数に関係なくNoneを返す。
+```python
+print(1)
+# 1
+
+a = print(1)
+print(a)
+# None
+```
 
 ### Applicative-order evaluaion and Normal-order evaluation
 
@@ -71,6 +102,21 @@ How interpreter recognizes your program?
 | --- | --- |
 | the arguments to procedure must be evaluated before the procedure is applied| the arguments to a procedure aren't evaluated until the values needed|
 
+### Statemnent vs Expression
+| statement | expression |
+|--|--|
+| be executed | be evaluated |
+
+e.g. of statement)
+def, return
+
+returnがない関数はどのような処理がされるのか。
+```python
+def square(x):
+	mul(x, x)
+```
+returnがないので、実行はされるが何も返さない。printの場合は有効。
+statementが各expressionをコントロールしている。
 
 ### Conditional
 ```scheme
@@ -89,6 +135,15 @@ e: subsequent expression
 
 In applicative-order evaluation, cond evaluates all arguments before the procedure. 
 However, If firstly checks predicate and only evaluate the one side resulting expression (argument).
+
+pythonの場合は、'header'と呼ばれるstatementがその後に続くstatementをコントロールしている。例えばwhileなど。
+
+```python
+<header>:
+	<statement>
+	<statement>
+	   ...
+```
 
 ### mathematical functions vs computer procedures
 
@@ -255,6 +310,12 @@ n種類の硬貨、分割する金額をaとする。
  1. オリジナルのプログラムをチェックする
  2. ツールを使い、プログラムの流れを追う
  3. プログラムにチェックポイントを入れる
+
+## 心構え
+ 1. test incrementally
+ 2. isolate errors
+ 3. check your assumption
+ 4. consult others
 
 ### デバッグの方針
 
