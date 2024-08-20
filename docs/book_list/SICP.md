@@ -1,4 +1,4 @@
-# SICP 
+# SICP
 
 
 # project
@@ -16,7 +16,7 @@ By 9/1
 flowchart LR
 A[simple idea] --> B[complex idea]
 C[simple idea] --> B
-D[simple idea] --> B  
+D[simple idea] --> B
 ```
 
  1. primitive expressions
@@ -32,7 +32,7 @@ A --- C[compound procedures]
 ```
 
 ### Combination
-combination = procedure 
+combination = procedure
 How interpreter evaluates combination?
 
  - evaluate subexpressions of combination
@@ -133,7 +133,7 @@ e: subsequent expression
 
 > if vs cond
 
-In applicative-order evaluation, cond evaluates all arguments before the procedure. 
+In applicative-order evaluation, cond evaluates all arguments before the procedure.
 However, If firstly checks predicate and only evaluate the one side resulting expression (argument).
 
 pythonの場合は、'header'と呼ばれるstatementがその後に続くstatementをコントロールしている。例えばwhileなど。
@@ -194,7 +194,7 @@ sqrtの中に閉じ込められることで、サブ問題が局所化した。
  1. Functions as arguments
  2. Nested definitions
  3. Functions as return values
- 
+
 ## Functions as arguments
 
 sumという概念の共通化をhigh-order functionは可能にする。
@@ -212,7 +212,7 @@ def summation(n, term):
 ordinary function 	<--independent-->	specific numbers
 high-order function	<--independent-->	specific function
 
-<例：反復改善アルゴリズム> 
+<例：反復改善アルゴリズム>
 
 ```python
 def improve(update, close, guess=1):
@@ -267,11 +267,11 @@ global
 ```
 
 sqrt_updateが使うことのできる環境は3つ。
-	
+
  1. sqrt_update環境
  2. sqrt環境
  3. global環境
- 
+
 ## Functions as return values
 
 ### functional composition
@@ -358,9 +358,9 @@ $n! = n * (n-1)!$
 
 Linear recursion process
 ```scheme
-(define (factorial n)  
-	(if (= n 1)  
-	1  
+(define (factorial n)
+	(if (= n 1)
+	1
 	(* n (factorial (- n 1)))))
 ```
 
@@ -425,11 +425,41 @@ linear iterative processを使うと以下のようになる。
 (define (fib-iter a b count)
   (if (= count 0)
       b
-      (fib-iter 
-            (+ a b) 
-            a 
+      (fib-iter
+            (+ a b)
+            a
 ```
 必要な変数は3つのみ。また計算量は入力nに対して線形的に増えるだけ。
+
+### Partition problems
+問題：
+
+ - ある任意の正の整数nとする。nより小さい正の整数mの足し算でnを分割して表現する方法は何通りあるか。
+
+解法：
+nを最大mで分割する問題は以下の2つの問題に分けることができる。
+
+ 1. n - mを最大mで分割する方法の数（mを使った世界線）
+ 2. n を最大m - 1で分割する方法の数　（mを使わなかった世界線）
+
+ベースケースは以下の3つ
+
+ 1. 0をmで分割する方法は1通り
+ 2. 負の整数をmで分割する方法は0通り
+ 3. nを0で分割する方法は0通り
+
+```py
+def partition(n, m):
+	if n == 0:
+		return 1
+	elif n < 0:
+		return 0
+	elif m - 1 == 0:
+		return 0
+	else:
+		return partition(n - m, m) + partition(n, m - 1)
+```
+
 
 ### 両替問題
 任意の金額を与えられた種類のコインを使って両替する方法の数を計算せよ。
