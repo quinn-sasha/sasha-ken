@@ -15,9 +15,9 @@
 コンピュータサイエンスの基本。
 参考にしたカリキュラムは以下の3つです。
 
- - [coding-university](https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#interview-prep-books)
- - [roadmap.sh](https://roadmap.sh/get-started)
- - [TeachYourselfCS](https://github.com/ralphplumley/TeachYourselfCS-JP/blob/main/%E6%97%A5%E6%9C%AC%E8%AA%9E.md)
+- [coding-university](https://github.com/jwasham/coding-interview-university?tab=readme-ov-file#interview-prep-books)
+- [roadmap.sh](https://roadmap.sh/get-started)
+- [TeachYourselfCS](https://github.com/ralphplumley/TeachYourselfCS-JP/blob/main/%E6%97%A5%E6%9C%AC%E8%AA%9E.md)
 
 ## 短期の目標
 
@@ -30,3 +30,6 @@
 来年の8月にインターンに応募する。
 
 2027年からビックテック企業で働く。
+
+Address in korea:
+145, Anam-ro, Seongbuk-gu, Seoul, Republic of Korea
