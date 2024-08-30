@@ -33,3 +33,6 @@
 
 Address in korea:
 145, Anam-ro, Seongbuk-gu, Seoul, Republic of Korea
+
+Phone number in Korea:
++82 10-6831-2851
