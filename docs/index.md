@@ -1,5 +1,3 @@
-# Readme.md
-
 Hi, my name is Sasha.
 I am a university student who likes computer science.
 My goal is to help people by software.
