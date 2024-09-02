@@ -22,6 +22,9 @@
   - cast:
     - let you override inferred data type of an expression
     - `cast(data_type, expression)`
+    - mypy can infer positional-only and keyword-only argument
+      - positional-only: `x: int, /`
+      - keyword-only: `*, y: int`
 - duck types
   - e.g.) iterable, sequence
   - use Io[str] or Io[bytes] for function that uses objects coming from an open() call
