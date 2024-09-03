@@ -28,3 +28,14 @@
 - duck types
   - e.g.) iterable, sequence
   - use Io[str] or Io[bytes] for function that uses objects coming from an open() call
+- What is decorator function?
+  - input: another function
+  - output: new function
+  - `@decorator_name` above function to apply decorator function
+
+```py
+from typing import TypeVar, Callable, Any
+
+# F will be used to represent decorator function
+F = TypeVar('F', bound=Callable[..., Any])
+```
