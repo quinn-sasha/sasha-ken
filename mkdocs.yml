@@ -34,7 +34,6 @@ theme:
 
 plugins:
   - blog
-    blog_toc: true
   - search
 
 extra:
