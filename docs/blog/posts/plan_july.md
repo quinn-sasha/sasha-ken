@@ -1,3 +1,9 @@
+---
+draft: true
+date: 2024-07-01
+categories:
+    - plan
+---
 
 # 今後の方針
 

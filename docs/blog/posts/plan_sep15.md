@@ -1,3 +1,10 @@
+---
+draft: true
+date: 2024-09-15
+categories:
+  - plan
+---
+
 # weekly thought(9/14 ~ 21)
 
 ## personal

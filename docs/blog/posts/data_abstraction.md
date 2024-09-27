@@ -1,3 +1,11 @@
+---
+draft: true
+date: 2024-09-28
+categories:
+  - python
+  - OOP
+---
+
 # Data abstraction
 
 - constructor and selector
@@ -87,7 +95,7 @@ Syntax
 
 ```py
 class <name>:
-	<suite>
+  <suite>
 ```
 
 - `__init__(self, parameters)` is a constructor of an object from class.
