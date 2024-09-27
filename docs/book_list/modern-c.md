@@ -29,4 +29,3 @@ Definition  -- specify --> Objects
 | Signed int                                            | Unsigned int                                               |
 |-------------------------------------------------------|------------------------------------------------------------|
 | Contain negative integer (e.g. 0000 ~ 1111 => -8 ~ 7) | Contain only positive integer (e.g. 0000 ~ 1111 => 0 ~ 15) |
-
