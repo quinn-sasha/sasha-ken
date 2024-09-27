@@ -33,6 +33,8 @@ theme:
       accent: lime
 
 plugins:
+  - blog
+    blog_toc: true
   - search
 
 extra:
