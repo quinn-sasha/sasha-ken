@@ -31,20 +31,3 @@ Definition  -- specify --> Objects
 | Contain negative integer (e.g. 0000 ~ 1111 => -8 ~ 7) | Contain only positive integer (e.g. 0000 ~ 1111 => 0 ~ 15) |
 
 - Unsigned arithmetic has valid results except results overflow
-
-### Pointers
-
-- Address and type
-  - address: location in memory
-  - type: how this data is interpreted
-
-- syntax
-
-```c
-// declaration
-*identifierP
-// let a pointer point to variable x
-identifierP = &x;
-// *A is a object which A points to
-y = *identifier // y = x
-```
