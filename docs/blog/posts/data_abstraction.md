@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2024-09-28
 categories:
   - python
@@ -7,6 +6,7 @@ categories:
 ---
 
 # Data abstraction
+
 
 - constructor and selector
 

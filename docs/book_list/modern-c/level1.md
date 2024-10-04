@@ -49,6 +49,22 @@ Definition  -- specify --> Objects
 - A decimal integer constant has the first of the three signed types that fits it (e.g signed -> signed long)
 - same value can have different types because of platforms they are in
 
+#### Type determine rule
+
+- A decimal integer constant has the first of the three signed types that fits it
+  - decimal literal => signed integer and used to express negative value
+
+```text
+--->
+signed char < short < int < long < long long
+
+--->
+signed int < unsigned int
+```
+
+- range of signed int in 16-bit
+  - min: $2^{16} - 1$
+
 #### literals
 
 - 'a': integer constant
@@ -60,3 +76,21 @@ Definition  -- specify --> Objects
 // seen as negation operation, but can be signed
 ```
 
+- **Don’t use octal or hexadecimal constants to express negative values**
+  - Because - (negation) doesn't make them negative value
+  - Result: $2^n - (original \space number)$
+
+```c
+1U // unsigned
+1L // signed long
+1ULL // unsigned long long
+```
+
+- Negation of **unsigned** integer is not like two's complement
+  - $2^n - (unsigned \space integer)$ n: number of digits
+
+```c
+0.2f // floating point
+0.2l // long double
+0.2  // double
+```
