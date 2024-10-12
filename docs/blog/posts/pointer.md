@@ -67,4 +67,14 @@ a[i] == *(a + i)
 char s[] == char *s
 ```
 
+```c
+cahr message[] // array
+char *pmessage // pointer
+
+pmessage = "I am your father" // not a string assignement
+// pmessage points to a first element of the char array
+// pmessage = &("I am your father"[0])
+// char *str  = "hello";
+```
+
 reference: C programming language 2d edition
