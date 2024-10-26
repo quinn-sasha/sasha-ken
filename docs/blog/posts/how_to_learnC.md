@@ -1,6 +1,6 @@
 ---
 draft: true
-date: 2024-10-
+date: 2024-10-26
 categories:
   - C
 ---
