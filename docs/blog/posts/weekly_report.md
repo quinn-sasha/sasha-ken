@@ -36,9 +36,9 @@ categories:
 ### 基本毎日やること
 
 - その日、何に時間を割くかを想像する
-- 本を読む (30 - 60min)
-- 42の問題を解く and Cの本を読む (2h30min)
+- 本を読む (30min)
+- 42の問題を解く and Cの本を読む (1h30min)
 - leetcode (1h after lunch)
 - OSS (2h)
 - 韓国語 (帰宅後50min)
-- 明日の予習(slideを見る 2h till 21:10)
+- 明日の予習(slideを見る 1h30min till 21:10)
