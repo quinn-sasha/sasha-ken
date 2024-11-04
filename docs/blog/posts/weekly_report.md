@@ -2,6 +2,8 @@
 date: 2024-10-26
 categories:
   - thought
+tags:
+  - report
 ---
 
 ## 何をしたか
@@ -23,15 +25,15 @@ categories:
 
 ## 何をするか
 
-| 個人        | 人に話しかける<br>新しいことにチャレンジをする<br>本を朝に読む(30 min)<br>筋トレ(Tue, Thu, Fri)<br>韓国語(帰宅後50min)                                                                                   |     |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| 大学        | 1日2h予習(夜)<br>授業の資料だけ見ればいい                                                                                                                                            |     |
-| 計画        | 朝にその日何をするかざっくりと決める<br>週一回計画を更新する                                                                                                                                     |     |
-| CS        | leetcode 2 problems (1h after lunch)<br>42 problems (2h)<br>C book (30 min)<br>OSS intern (2h)<br>Also look for other OSS programs and summer intern(ask google guy) |     |
-| mental    | 人を助けに行く<br>行動する<br>自信を持つ                                                                                                                                             |     |
-| long-term | by 11/5: Finnish preparation<br>by 12/1: One commit to OSS<br>1/6 - 2: 42 piscine<br>2 - 8: intern                                                                   |     |
-|           |                                                                                                                                                                      |     |
-|           |                                                                                                                                                                      |     |
+| 個人        | 人に話しかける<br>新しいことにチャレンジをする<br>本を朝に読む(30 min)<br>筋トレ(Tue, Thu, Fri)<br>韓国語(帰宅後50min)                                                            |     |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| 大学        | 1日2h予習(夜)<br>授業の資料だけ見ればいい                                                                                                                     |     |
+| 計画        | 朝にその日何をするかざっくりと決める<br>週一回計画を更新する                                                                                                              |     |
+| CS        | leetcode 2 problems (1h after lunch)<br>42 problems <br>OSS intern (2h)<br>Also look for other OSS programs and summer intern(ask google guy) |     |
+| mental    | 人を助けに行く<br>行動する<br>自信を持つ                                                                                                                      |     |
+| long-term | by 11/5: Finnish preparation<br>by 12/1: One commit to OSS<br>1/6 - 2: 42 piscine<br>2 - 8: intern                                            |     |
+|           |                                                                                                                                               |     |
+|           |                                                                                                                                               |     |
 
 ### 基本毎日やること
 
