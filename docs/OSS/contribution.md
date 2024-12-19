@@ -2,9 +2,9 @@
 
 ## Mypy
 
-1. [Make changelog visible in a mypy official document](https://github.com/python/mypy/pull/17742)
+- [Make changelog visible in a mypy official document](https://github.com/python/mypy/pull/17742)
 
-## Automation-scripts
 
-1. [Gmail birthday sender](https://github.com/python-geeks/Automation-scripts/pull/955)
-2. [Flake8 lint error from irrelevant scripts occurred on some pull requests](https://github.com/python-geeks/Automation-scripts/issues/956)
+## Candinates
+- [foos asia](https://fossasia.org/)
+- [Linux Mentorship Programs](https://mentorship.lfx.linuxfoundation.org/#projects_all) <- **Spring Term: March 1st - May 31st** (申込は2週間前くらいから)
